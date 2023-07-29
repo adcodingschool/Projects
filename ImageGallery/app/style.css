@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(240, 240, 240) 100%);
+}
+body .gallery-container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 10px;
+}
+body .gallery-container .gallery {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+body .gallery-container .gallery .card {
+  height: 300px;
+  width: 300px;
+}
+body .gallery-container .gallery .card h1 {
+  font-size: 20px;
+}
+body .gallery-container .gallery .card p {
+  font-size: 14px;
+}
+body .gallery-container .gallery .card img {
+  height: 70%;
+  width: 100%;
+}
+body .gallery-container .title {
+  font-weight: 900;
+  font-size: 40px;
+  text-align: center;
+}
+body .gallery-container .text {
+  margin-top: 10px;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

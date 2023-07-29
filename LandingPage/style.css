@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{ 
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.295), rgba(216, 24, 123, 0.295)),url('https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+    height: 100vh;
+    width: 100%;
+        
+}
+
+.logo h1{
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 50px;
+ 
+}
+.logo{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo p{
+    color: rgba(255, 255, 255, 0.74);
+    text-align: center;
+    vertical-align: middle;
+
+    font-size: 18px;
+padding-left: 40px;
+padding-right: 40px;
+ 
+}
+.logo input{
+    text-decoration: none;
+    outline: none;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+
+}
+.logo input:hover{
+    color: black;
+    background: white;
+}
+li a {
+    color: white;
+}
+
+.services{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+.service-image{
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-image img{
+    width: 100%;
+   
+}
+.service-content{
+    width: 50%;
+ flex-direction: column;
+    display: flex;
+  justify-content: center;
+  padding: 20px;
+   
+    
+}
+.service-section h2,.contact-section h2{
+    color: rgb(255, 0, 132);
+}
+.service-content h2{
+    color: rgb(0, 0, 0);
+}
+.service-content h2{
+    text-align: left;
+    font-size: 36px;
+}
+.service-content p{
+    font-size: 18px;
+    color: rgba(128, 128, 128, 0.609);
+}
+.contact{
+    display: flex;
+    width: 80%;
+    margin: auto;
+   
+}
+.contact-form{
+    width: 50%;
+}
+.contact-map{
+    width: 50%;
+}
+.contact-image{
+    width: 50%;
+margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-image img{
+    width: 100%;
+}
+form input{
+    text-decoration: none;
+    outline: none;
+    padding: 8px 30px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 0, 132);
+    color:  rgb(255, 0, 132);
+    border-radius: 5px;
+}
+.contact-map h2{
+    color: rgba(82, 82, 82, 0.59);
+    padding: 20px 0px;
+}
