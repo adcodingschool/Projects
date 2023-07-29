@@ -12,32 +12,32 @@ html {
 body {
   height: 100%;
   width: 100%;
+  font-size: 14px;
   font-family: "Poppins", sans-serif;
-  background: rgb(6, 2, 3);
-  background: linear-gradient(35deg, rgb(6, 2, 3) 0%, rgb(0, 0, 0) 50%, rgb(68, 0, 13) 100%) no-repeat;
+  background: linear-gradient(35deg, rgb(6, 2, 3) 0%, rgb(0, 0, 0) 50%, rgb(17, 0, 3) 100%) no-repeat;
 }
 body .register-form {
   padding: 50px;
   height: 100%;
-  width: 100%;
+  font-size: 1rem;
 }
 body .register-form .outer-container {
   height: 100%;
-  width: 100%;
   padding-top: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 4px 12px 0 rgba(255, 255, 255, 0.3294117647);
-  backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.1176470588);
-  -webkit-backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(212, 0, 74, 0.2470588235);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
   border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 1rem;
 }
 body .register-form .outer-container .heading {
   color: white;
-  font-size: 35px;
+  font-size: 2rem;
 }
 body .register-form .outer-container .heading .dot {
   font-size: 75px;
@@ -46,10 +46,10 @@ body .register-form .outer-container .heading .dot {
 }
 body .register-form .outer-container .form-container {
   overflow-y: auto;
-  width: 375px;
+  max-width: 25rem;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.76);
-  margin: 20px 0px;
+  margin: 20px 20px;
   border-radius: 10px;
 }
 body .register-form .outer-container .form-container .register-heading {
@@ -61,7 +61,7 @@ body .register-form .outer-container .form-container .register-heading {
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 body .register-form .outer-container .form-container .form {
@@ -78,7 +78,7 @@ body .register-form .outer-container .form-container .form .register-button {
 body .register-form .outer-container .form-container .form .register-button button.register {
   width: 100%;
   height: 60px;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 600;
   background-color: #d4004a;
   border-radius: 10px;
@@ -120,4 +120,10 @@ body .register-form .outer-container .form-container .form .input-field .names .
   border-radius: 10px;
   border: none;
   background-color: rgb(26, 26, 26);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=login-style.css.map */
