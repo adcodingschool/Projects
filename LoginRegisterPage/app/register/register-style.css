@@ -14,7 +14,7 @@ body {
   width: 100%;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(35deg, rgb(6, 2, 3) 0%, rgb(0, 0, 0) 50%, rgb(17, 0, 3) 100%) no-repeat;
+  background-color: #fafafa;
 }
 body .register-form {
   padding: 50px;
@@ -27,17 +27,12 @@ body .register-form .outer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 8px 32px 0 rgba(212, 0, 74, 0.2470588235);
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
   font-size: 1rem;
 }
 body .register-form .outer-container .heading {
-  color: white;
+  color: rgb(26, 26, 26);
   font-size: 2rem;
+  margin-bottom: 30px;
 }
 body .register-form .outer-container .heading .dot {
   font-size: 75px;
@@ -47,10 +42,11 @@ body .register-form .outer-container .heading .dot {
 body .register-form .outer-container .form-container {
   overflow-y: auto;
   max-width: 25rem;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.76);
-  margin: 20px 20px;
+  min-width: 20rem;
+  height: auto;
   border-radius: 10px;
+  background: #fafafa;
+  box-shadow: 20px 20px 60px #d5d5d5, -20px -20px 60px #ffffff;
 }
 body .register-form .outer-container .form-container .register-heading {
   width: 100%;
@@ -66,14 +62,13 @@ body .register-form .outer-container .form-container .register-heading {
 }
 body .register-form .outer-container .form-container .form {
   margin: 25px;
-  height: 65%;
-  min-height: 400px;
+  min-height: 350px;
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
 body .register-form .outer-container .form-container .form .register-button {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 body .register-form .outer-container .form-container .form .register-button button.register {
   width: 100%;
@@ -90,21 +85,32 @@ body .register-form .outer-container .form-container .form .register-button butt
 body .register-form .outer-container .form-container .form .register-button button.register:hover {
   background-color: #eb0052;
 }
+body .register-form .outer-container .form-container .form .register-button .already-user {
+  text-align: center;
+  margin: 10px 0;
+}
+body .register-form .outer-container .form-container .form .register-button .already-user a {
+  color: #eb0052;
+}
 body .register-form .outer-container .form-container .form .input-field {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 body .register-form .outer-container .form-container .form .input-field label {
-  color: rgb(219, 219, 219);
+  color: rgb(0, 0, 0);
+  font-weight: 600;
 }
 body .register-form .outer-container .form-container .form .input-field .input {
   padding: 20px;
-  color: white;
+  color: rgb(0, 0, 0);
   height: 3rem;
   border-radius: 10px;
-  border: none;
-  background-color: rgb(26, 26, 26);
+  border: 1px solid rgb(247, 247, 247);
+  background-color: white;
+}
+body .register-form .outer-container .form-container .form .input-field .input:focus-visible {
+  outline-color: #eb0052;
 }
 body .register-form .outer-container .form-container .form .input-field .names {
   display: flex;
@@ -114,16 +120,19 @@ body .register-form .outer-container .form-container .form .input-field .names {
 }
 body .register-form .outer-container .form-container .form .input-field .names .name {
   padding: 20px;
-  color: white;
+  color: rgb(53, 53, 53);
   width: 50%;
   height: 3rem;
   border-radius: 10px;
   border: none;
-  background-color: rgb(26, 26, 26);
+  background-color: white;
 }
 
 @media screen and (max-width: 768px) {
   body {
     font-size: 10px;
   }
-}/*# sourceMappingURL=login-style.css.map */
+  body .heading {
+    font-size: 1.7rem !important;
+  }
+}/*# sourceMappingURL=register-style.css.map */

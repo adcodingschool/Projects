@@ -12,13 +12,7 @@ body {
   width: 100%;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(
-      35deg,
-      rgba(6, 2, 3, 1) 0%,
-      rgba(0, 0, 0, 1) 50%,
-      rgb(17, 0, 3) 100%
-    )
-    no-repeat;
+  background-color: #fafafa;
 
   .register-form {
     padding: 50px;
@@ -30,16 +24,12 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      background: rgba(255, 255, 255, 0.15);
-      box-shadow: 0 8px 32px 0 #d4004a3f;
-      backdrop-filter: blur(1px);
-      -webkit-backdrop-filter: blur(1px);
-      border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
+
       font-size: 1rem;
       .heading {
-        color: white;
+        color: rgb(26, 26, 26);
         font-size: 2rem;
+        margin-bottom: 30px;
         .dot {
           font-size: 75px;
           color: #d4004a;
@@ -49,10 +39,11 @@ body {
       .form-container {
         overflow-y: auto;
         max-width: 25rem;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.76);
-        margin: 20px 20px;
+        min-width: 20rem;
+        height: auto;
         border-radius: 10px;
+        background: #fafafa;
+        box-shadow: 20px 20px 60px #d5d5d5, -20px -20px 60px #ffffff;
         // border: 1px solid #fc045bd3;
         .register-heading {
           width: 100%;
@@ -68,13 +59,12 @@ body {
         }
         .form {
           margin: 25px;
-          height: 65%;
-          min-height: 400px;
+          min-height: 350px;
           display: flex;
           flex-direction: column;
           gap: 25px;
           .register-button {
-            margin-top: 2em;
+            margin-top: 1em;
             button.register {
               width: 100%;
               height: 60px;
@@ -91,21 +81,33 @@ body {
                 background-color: #eb0052;
               }
             }
+            .already-user {
+              text-align: center;
+              margin: 10px 0;
+              a {
+                color: #eb0052;
+              }
+            }
           }
           .input-field {
             display: flex;
             flex-direction: column;
             gap: 10px;
             label {
-              color: rgb(219, 219, 219);
+              color: rgb(0, 0, 0);
+              font-weight: 600;
             }
             .input {
               padding: 20px;
-              color: white;
+              color: rgb(0, 0, 0);
               height: 3rem;
               border-radius: 10px;
-              border: none;
-              background-color: rgb(26, 26, 26);
+              border: 1px solid rgb(247, 247, 247);
+              background-color: white;
+
+              &:focus-visible {
+                outline-color: #eb0052;
+              }
             }
             .names {
               display: flex;
@@ -114,12 +116,12 @@ body {
               gap: 10px;
               .name {
                 padding: 20px;
-                color: white;
+                color: rgb(53, 53, 53);
                 width: 50%;
                 height: 3rem;
                 border-radius: 10px;
                 border: none;
-                background-color: rgb(26, 26, 26);
+                background-color: white;
               }
             }
           }
@@ -131,5 +133,8 @@ body {
 @media screen and (max-width: 768px) {
   body {
     font-size: 10px;
+    .heading {
+      font-size: 1.7rem !important;
+    }
   }
 }
