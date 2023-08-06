@@ -191,18 +191,31 @@ form input {
   .contact-image {
     width: 100%;
   }
+  .contact-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+align-items: center;
+  }
+  .contact-map{
+    width: 100%;
+    padding: 20px;
+  }
   .contact,
   .services {
     flex-direction: column;
+    width: 100%;
   }
   .services .service-content,
   .services .service-content {
     width: 100%;
   }
 }
-@media screen and (max-width: 462px) {
+@media screen and (max-width: 792px) {
   .first_section {
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   .logo h1 {
     font-size: 3rem;
