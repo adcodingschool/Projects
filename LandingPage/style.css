@@ -3,12 +3,16 @@
     margin: 0;
     box-sizing: border-box;
 }
+.navbar{
+    background-color: rgb(255, 255, 255);
+}
 .main{ 
 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.295), rgba(216, 24, 123, 0.295)),url('https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+    background: rgb(244,167,195);
+background: linear-gradient(183deg, rgba(244,167,195,1) 0%, rgba(255,0,92,1) 100%);
     height: 100vh;
     width: 100%;
         
@@ -36,8 +40,8 @@
     vertical-align: middle;
 
     font-size: 18px;
-padding-left: 40px;
-padding-right: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
  
 }
 .logo input{
@@ -132,4 +136,38 @@ form input{
 .contact-map h2{
     color: rgba(82, 82, 82, 0.59);
     padding: 20px 0px;
+}
+.header{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.5px );
+    -webkit-backdrop-filter: blur( 0.5px );
+  
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.btn{
+    color: rgb(255, 0, 132);
+    border: 1px solid rgb(255, 0, 132);
+}
+.btn:hover{
+    color: white;
+    background: rgb(255, 0, 132);
+}
+@media (max-width:850px){
+    .service-image,.contact-image{
+        width: 100%;
+    }
+    .contact, .services{
+        flex-direction: column;
+    }
+    .services .service-content ,.services .service-content  {
+        width: 100%;
+    }
+  
+
 }
